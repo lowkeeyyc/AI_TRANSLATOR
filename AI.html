@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Translator  </title>
+  <script src="AIscript.js"></script>
+  <script src="systemerr.js"></script>
+  <link rel="stylesheet" type="text/css" href="AI.css">
+</head>
+<body>
+    <!-- HTML structure for the home screen -->
+  <div id="HomeScreen" class="home-screen">
+    <header>
+        <div class="translator">Translator</div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <svg
+                class="group-2"
+                width="37"
+                height="37"
+                viewBox="0 0 37 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d_19_35)">
+                  <g filter="url(#filter1_d_19_35)">
+                    <circle
+                      cx="18.5"
+                      cy="18.5"
+                      r="18.5"
+                      fill="white"
+                      fill-opacity="0.2"
+                      shape-rendering="crispEdges"
+                    />
+                    <circle
+                      cx="18.5"
+                      cy="18.5"
+                      r="19"
+                      stroke="#1EB5E4"
+                      stroke-opacity="0.28"
+                      shape-rendering="crispEdges"
+                    />
+                  </g>
+                  <line x1="10.1738" y1="15" x2="25.8262" y2="15" stroke="black" />
+                  <line x1="11" y1="25.5" x2="26.6525" y2="25.5" stroke="black" />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_19_35"
+                    x="-5"
+                    y="-1"
+                    width="47"
+                    height="47"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0.115712 0 0 0 0 0.708604 0 0 0 0 0.895833 0 0 0 0.2 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_19_35"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_19_35"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter1_d_19_35"
+                    x="-5"
+                    y="-1"
+                    width="47"
+                    height="47"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0.115712 0 0 0 0 0.708604 0 0 0 0 0.895833 0 0 0 0.28 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_19_35"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_19_35"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+            </svg>
+           </button>
+          <div class="dropdown-content">
+            <a href="settings.html"><button id="settings-screen" class="settings-btn">Settings</button></a>
+            <a href="preferences.html"><button id="context-screen" class="context-btn">Context</button></a>
+            <a href="favorities.html"><button id="favorities-screen" class="favorities-btn">Favorities</button></a>
+          </div>
+        </div>   
+    </header>
+    <main>
+      <div class="conversation-text">
+        <div class="rectangle-82"></div>
+        <div class="menu">
+          <select class="menu-select" id="conversation">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="chinese">Chinese</option>
+          </select>
+        </div>
+        <img class="ellipse-52" src="cross.jpg" />
+      </div>  
+      <div class="start-typing">Start typing...</div> 
+      <button id="translate-btn"></button> 
+
+      <div class="translated-text">
+        <div class="rectangle-8"></div>
+        <div class ="menu">
+          <select class="menu-select" id="translated">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="chinese">Chinese</option>
+          </select>
+        </div>
+        <img class="ellipse-5" src="cross.jpg" /> 
+      </div>
+      <div class="translation">Translation...</div>
+      <div class="rectangle-6"></div>
+
+      <svg
+      class="star-2"
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      >
+      <path
+          d="M14 1.61804L16.6677 9.82827L16.7799 10.1738H17.1432H25.776L18.7919 15.248L18.498 15.4615L18.6103 15.807L21.2779 24.0172L14.2939 18.943L14 18.7295L13.7061 18.943L6.72206 24.0172L9.38973 15.807L9.50199 15.4615L9.20809 15.248L2.22405 10.1738H10.8568H11.2201L11.3323 9.82827L14 1.61804Z"
+          fill="white"
+          stroke="black"
+      />
+      </svg>
+      <img class="rectangle-5" src="copy.png" />
+      <svg
+      class="star-3"
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      >
+      <path
+          d="M14 1.61804L16.6677 9.82827L16.7799 10.1738H17.1432H25.776L18.7919 15.248L18.498 15.4615L18.6103 15.807L21.2779 24.0172L14.2939 18.943L14 18.7295L13.7061 18.943L6.72206 24.0172L9.38973 15.807L9.50199 15.4615L9.20809 15.248L2.22405 10.1738H10.8568H11.2201L11.3323 9.82827L14 1.61804Z"
+          fill="#1EB5E4"
+          fill-opacity="0.2"
+          stroke="black"
+      />
+      </svg>
+
+      <img class="rectangle-7" src="copy.png" />
+
+    </main>
+<footer>
+    <!-- Footer content -->
+    
+    <a href=""><button><img class="ellipse-3" src="speech.png" /></button></a>
+    <div id="network-error" style="display: none;">
+      <script src="networkerr.js"></script>
+      <p>There was a problem connecting to the server.</p>
+      <p>Please check your internet connection and try again.</p>
+      <button id="retry-button">Retry</button>
+    </div>
+    
+  
+</footer>
+</body>
+</html>

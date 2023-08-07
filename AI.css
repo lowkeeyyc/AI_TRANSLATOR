@@ -1,0 +1,245 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+header {
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+.translator,
+.translator * {
+    box-sizing: border-box;
+    display: inline-block;
+  }
+.translator {
+    color: #000000;
+    text-align: center;
+    font-family: "papyrus", fantasy;
+    font: 400 24px;
+    position: relative;
+    width: 165px;
+    height: 37px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: "papyrus", fantasy;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.settings-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-family: "papyrus", fantasy;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.context-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-family: "papyrus", fantasy;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+} 
+.favorities-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-family: "papyrus", fantasy;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+} 
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}  
+.conversation-text {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-82 {
+  background: #ffffff;
+  width: 323px;
+  height: 32px;
+  position: absolute;
+  left: 32px;
+  top: 84px;
+  box-shadow: 0px 4px 4px 0px rgba(30, 181, 228, 0.2);
+}
+
+#conversation.menu-select{
+  background-color: whitesmoke;
+  text-align: left;
+  font: 100px;
+  border: none;
+  font-family: "papyrus", fantasy;
+  position: absolute;
+  left: 31px;
+  top: 84px;
+}
+.ellipse-52 {
+  border-radius: 50%;
+  width: 17px;
+  height: 21px;
+  position: absolute;
+  left: 325.06px;
+  top: 99.09px;
+  transform-origin: 0 0;
+  transform: rotate(-45deg) scale(1, 1);
+}
+.start-typing {
+  color: #000000;
+  text-align: left;
+  font: 400 24px "Macondo Swash Caps", sans-serif;
+  opacity: 0.5;
+  position: absolute;
+  left: 34px;
+  top: 130px;
+}
+.translated-text{
+  position: absolute;
+  inset: 0;
+}
+.rectangle-8 {
+  background: rgba(30, 181, 228, 0.2);
+  width: 323px;
+  height: 32px;
+  position: absolute;
+  left: 30px;
+  top: 360px;
+  box-shadow: 0px 4px 7px 0px rgba(255, 255, 255, 1);
+}
+#translated.menu-select{
+  background: rgba(30, 181, 228, 0.2);
+  text-align: left;
+  border: none;
+  font: 100px;
+  height: 32px;
+  font-family: "papyrus", fantasy;
+  position: relative;
+  left: 31px;
+  top: 359px;
+
+}
+.ellipse-5 {
+  border-radius: 50%;
+  width: 17px;
+  height: 21px;
+  position: absolute;
+  left: 323.06px;
+  top: 375.09px;
+  transform-origin: 0 0;
+  transform: rotate(-45deg) scale(1, 1);
+}
+.translation {
+  color: #000000;
+  text-align: left;
+  font: 400 24px "Macondo Swash Caps", sans-serif;
+  opacity: 0.5;
+  position: absolute;
+  left: 26px;
+  top: 404px;
+}
+.rectangle-6 {
+  background: rgba(30, 181, 228, 0.5);
+  border-radius: 44px 0px 0px 0px;
+  width: 371.72px;
+  height: 243.62px;
+  position: absolute;
+  left: 0.66px;
+  top: 349.62px;
+  transform-origin: 0 0;
+  transform: rotate(0.12deg) scale(1, 1);
+}
+.star-2 {
+    position: absolute;
+    left: 339px;
+    top: 269px;
+    overflow: visible;
+  }
+
+.rectangle-5 {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 339px;
+    top: 309px;
+  }
+.star-3 {
+    position: absolute;
+    left: 345px;
+    top: 527px;
+    overflow: visible;
+  }
+.rectangle-7 {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 344px;
+    top: 567px;
+  }
+.group-14 {
+    position: absolute;
+    inset: 0;
+    left: 34px;
+    top: 130px;
+  }
+.ellipse-3 {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-width: 1px;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 159px;
+    top: 598px;
+    box-shadow: 0px 4px 4px 0px rgba(30, 181, 228, 0.28);
+  }
